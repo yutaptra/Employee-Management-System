@@ -11,6 +11,7 @@ class Employee:
         self.root.geometry("1530x790+0+0")
         self.root.title('Employee Management System')
         
+        
         # Variables
         self.var_dep=StringVar()
         self.var_name=StringVar()
@@ -458,7 +459,7 @@ class Employee:
             except Exception as es:
                 messagebox.showerror('Error',f'Due To:{str(es)}',parent=self.root)
     
-                
+                    
 if __name__=="__main__":
     root=Tk()
     obj=Employee(root)
